@@ -1,4 +1,4 @@
-package com.akash.JavaProject.service.Variables.javalist;
+package com.akash.JavaProject.service.javalist;
 
 import java.util.ArrayList;
 import java.util.Collections;

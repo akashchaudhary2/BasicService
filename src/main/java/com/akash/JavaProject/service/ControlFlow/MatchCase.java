@@ -1,4 +1,4 @@
-package com.akash.JavaProject.service.Variables.ControlFlow;
+package com.akash.JavaProject.service.ControlFlow;
 
 public class MatchCase {
     public void matchcase(int n){
