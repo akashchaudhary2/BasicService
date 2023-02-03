@@ -1,9 +1,19 @@
 package com.akash.JavaProject.service.easy;
 
 
-public class EasyImpl implements Easy {
+import java.util.*;
+
+public class ELevalImpl implements ELevel {
     private final int[] ints = new int[2];
 
+
+    @Override
+    public void ListObjects() {
+        List list1 = new ArrayList();
+        List list2 = new LinkedList();
+        List list3 = new Stack();
+        List list4 = new Vector();
+    }
 
     @Override
     public int[] twoSum(int[] nums, int target) {
@@ -79,23 +89,15 @@ public class EasyImpl implements Easy {
 
     @Override
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int[] ints = new int[m + n];
-        for (int i = 0; i < nums1.length; i++) {
-            if (nums1[i] != 0) {
-                ints[i] = nums1[i];
-            }
-
+        n = nums2.length;
+        for (int i = 0; i < nums2.length; ++i) {
+            nums1[n] = nums2[i];
+            n = n + 1;
         }
-        for (int i = 0; i < n; i++) {
-            ints[m] = nums2[i];
-            m = m + 1;
-        }
-        for (int i = 0; i < ints.length; ++i) {
-            if (int[i]<)
-        }
-        for (int i = 0; i < ints.length; ++i) {
-            System.out.println(ints[i]);
-        }
-
+        Arrays.sort(nums1);
+        System.out.println(Arrays.toString(nums1));
     }
+
+
 }
+
