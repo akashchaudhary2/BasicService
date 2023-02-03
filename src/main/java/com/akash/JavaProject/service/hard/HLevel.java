@@ -1,6 +1,7 @@
 package com.akash.JavaProject.service.hard;
 
-public interface HLevel {
+public interface
+HLevel {
 
     public void MapObjects();
 

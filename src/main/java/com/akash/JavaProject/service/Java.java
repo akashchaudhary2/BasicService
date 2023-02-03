@@ -67,6 +67,10 @@ public class Java {
         System.out.println(medium.reverse(23));
         System.out.println(hard.findMedianSortedArrays(java.getInts1(), java.getInts()));
         System.out.println(medium.myAtoi("a"));
+        List l = new Vector();
+        l.add(0,"Akash");
+        
+
     }
 
 }

@@ -1,8 +1,10 @@
 package com.akash.JavaProject.service.hard;
 
 import com.akash.JavaProject.service.medium.MLevel;
+import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class HLImpl implements HLevel {
 
@@ -20,6 +22,11 @@ public class HLImpl implements HLevel {
         SortedMap map8 = new TreeMap();
         NavigableMap map9 = new TreeMap();
     }
+
+//    @Override
+//    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+//       return Arrays.stream(Stream.of(nums1,nums2).flatMap(Stream::of).toArray()).mapToInt(o-> (int) o).average().getAsDouble();
+//    }
 
     @Override
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
