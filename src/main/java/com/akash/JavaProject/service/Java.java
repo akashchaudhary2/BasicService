@@ -7,7 +7,10 @@ import com.akash.JavaProject.service.hard.HLImpl;
 import com.akash.JavaProject.service.medium.MLevel;
 import com.akash.JavaProject.service.medium.MediumImpl;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+import java.util.Vector;
 
 public class Java {
     private int[] ints = {2, 7};
@@ -51,7 +54,7 @@ public class Java {
         Java java = new Java();
         ELevel ELeval = new ELevalImpl();
         MLevel medium = new MediumImpl();
-        HLevel hard = new HLImpl();
+        HLevel hl = new HLImpl();
 
         List list = new LinkedList();
         list.add("hello");
@@ -65,10 +68,13 @@ public class Java {
         System.out.println(ELeval.lengthOfLastWord(java.getString()));
         ELeval.merge(java.getInts1(), 3, java.getInts(), 3);
         System.out.println(medium.reverse(23));
-        System.out.println(hard.findMedianSortedArrays(java.getInts1(), java.getInts()));
+        System.out.println(hl.findMedianSortedArrays(java.getInts1(), java.getInts()));
         System.out.println(medium.myAtoi("a"));
-        List l = new Vector();
-        l.add(0,"Akash");
+        hl.ExHashMap();
+        hl.ExLinkedHashMap();
+        hl.ExIdentityHashMap();
+
+
         
 
     }

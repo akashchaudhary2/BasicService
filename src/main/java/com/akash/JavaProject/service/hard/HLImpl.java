@@ -23,10 +23,36 @@ public class HLImpl implements HLevel {
         NavigableMap map9 = new TreeMap();
     }
 
-//    @Override
-//    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-//       return Arrays.stream(Stream.of(nums1,nums2).flatMap(Stream::of).toArray()).mapToInt(o-> (int) o).average().getAsDouble();
-//    }
+    @Override
+    public void ExHashMap() {
+        HashMap map = new HashMap();
+        map.put(1111,"customer0");
+        map.put(1111,"customer1");
+        map.put(2222,"customer2");
+        map.put(3333,"customer3");
+        map.put(4444,"customer4");
+        System.out.println(map);
+    }
+
+    @Override
+    public void ExLinkedHashMap() {
+        LinkedHashMap map = new LinkedHashMap();
+        map.put(1111,"customer0");
+        map.put(1111,"customer1");
+        map.put(2222,"customer2");
+        map.put(3333,"customer3");
+        map.put(4444,"customer4");
+        System.out.println(map);
+    }
+
+    @Override
+    public void ExIdentityHashMap() {
+        IdentityHashMap map = new IdentityHashMap();
+        map.put(1111,"customer0");
+        map.put(1111,"customer1");
+        System.out.println(map);
+    }
+
 
     @Override
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
