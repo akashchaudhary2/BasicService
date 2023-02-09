@@ -1,16 +1,17 @@
 package com.akash.JavaProject.service;
 
-import com.akash.JavaProject.service.easy.ELevel;
-import com.akash.JavaProject.service.easy.ELevalImpl;
-import com.akash.JavaProject.service.hard.HLevel;
-import com.akash.JavaProject.service.hard.HLImpl;
-import com.akash.JavaProject.service.medium.MLevel;
-import com.akash.JavaProject.service.medium.MediumImpl;
+import com.akash.JavaProject.service.elevel.ELevel;
+import com.akash.JavaProject.service.elevel.ELevalImpl;
+import com.akash.JavaProject.service.hlevel.Book;
+import com.akash.JavaProject.service.hlevel.Books;
+import com.akash.JavaProject.service.hlevel.HLevel;
+import com.akash.JavaProject.service.hlevel.HLImpl;
+import com.akash.JavaProject.service.mlevel.MLevel;
+import com.akash.JavaProject.service.mlevel.MediumImpl;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.TreeSet;
-import java.util.Vector;
 
 public class Java {
     private int[] ints = {2, 7};
@@ -73,9 +74,25 @@ public class Java {
         hl.ExHashMap();
         hl.ExLinkedHashMap();
         hl.ExIdentityHashMap();
+        hl.ExWeakHashMap();
+        hl.ExTreeMap();
+        hl.ExHashtable();
+        System.out.println();
+        List<Book> booksList = new ArrayList<>();
+        Books books = new Books();
+        books.setBooksList(booksList);
+        Book book = new Book();
+        book.setBooksInUpper(books.getBooksList());
+        book.getBooksInUpper().forEach(x->System.out.print(x+" "));;
+        book.setBookspriceGraeterThenX(books.getBooksList());
+        book.getBookspriceGraeterThenX().forEach(x->System.out.print(x+" "));;
+        book.setBooksInLower(books.getBooksList());
+        book.getBooksInLower().stream().forEach(x->System.out.print(x+" "));
 
 
-        
+
+
+
 
     }
 

@@ -1,9 +1,9 @@
-package com.akash.JavaProject.service.hard;
+package com.akash.JavaProject.service.hlevel;
 
-import com.akash.JavaProject.service.medium.MLevel;
-import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
+import com.akash.JavaProject.service.elevel.Temp;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class HLImpl implements HLevel {
@@ -51,6 +51,39 @@ public class HLImpl implements HLevel {
         map.put(1111,"customer0");
         map.put(1111,"customer1");
         System.out.println(map);
+    }
+
+    @Override
+    public void ExTreeMap() {
+        TreeMap map = new TreeMap();
+        map.put(101,"customer1");
+        map.put(102,"customer2");
+        map.put(103,"customer3");
+        map.put(104,104);
+        System.out.println(map);
+    }
+
+    @Override
+    public void ExWeakHashMap() {
+        WeakHashMap map =new WeakHashMap();
+        Temp temp = new Temp(10);
+        map.put(temp,"customer1");
+        System.out.println(map);
+        temp=null;
+        System.gc();
+        System.out.println(map);
+    }
+
+    @Override
+    public void ExHashtable() {
+        Hashtable hashtable = new Hashtable();
+        hashtable.put(new Temp(5),"customer1");
+        hashtable.put(new Temp(2),2);
+        hashtable.put(new Temp(6),"customer3");
+        hashtable.put(new Temp(15),"customer4");
+        hashtable.put(new Temp(23),"customer 5");
+        hashtable.put(new Temp(16),"customer6");
+        Stream.of(hashtable).forEach(x->System.out.print(x));
     }
 
 

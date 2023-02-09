@@ -1,7 +1,8 @@
-package com.akash.JavaProject.service.hard;
+package com.akash.JavaProject.service.hlevel;
 
-public interface
-HLevel {
+import java.util.List;
+
+public interface HLevel {
 
     public void MapObjects();
 
@@ -11,6 +12,11 @@ HLevel {
 
     public void ExIdentityHashMap();
 
+    public void ExTreeMap();
+
+    public void ExWeakHashMap();
+
+    public void ExHashtable();
     public double findMedianSortedArrays(int[] nums1, int[] nums2);
 
 }
