@@ -90,9 +90,13 @@ public class Java {
         book.getBookspriceGraeterThenX().forEach(x->System.out.print(x+" "));;
         book.setBooksInLower(books.getBooksList());
         book.getBooksInLower().stream().forEach(x->System.out.print(x+" "));
-
-
-
+        book.setCheapestBook(books.getBooksList());
+        book.getCheapestBook().stream().forEach(System.out::print);
+        book.setExpensiveBook(books.getBooksList());
+        book.getExpensiveBook().stream().forEach(System.out::print);
+        System.out.println();
+        book.setAllBooks(books.getBooksList());
+        book.getAllBooks().stream().forEach(System.out::print);
     }
 
 }
