@@ -1,4 +1,4 @@
-package com.akash.JavaProject.service.medium;
+package com.akash.JavaProject.service.mlevel;
 
 public interface MLevel {
     public void SetObjects();

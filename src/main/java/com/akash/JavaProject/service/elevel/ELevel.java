@@ -1,4 +1,4 @@
-package com.akash.JavaProject.service.easy;
+package com.akash.JavaProject.service.elevel;
 
 public interface ELevel {
     public void ListObjects();

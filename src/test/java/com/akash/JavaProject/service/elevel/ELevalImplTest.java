@@ -1,8 +1,6 @@
-package com.akash.JavaProject.service.easy;
+package com.akash.JavaProject.service.elevel;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ELevalImplTest {
 

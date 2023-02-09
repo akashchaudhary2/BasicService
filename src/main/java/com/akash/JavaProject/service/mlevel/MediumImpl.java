@@ -1,7 +1,6 @@
-package com.akash.JavaProject.service.medium;
+package com.akash.JavaProject.service.mlevel;
 
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class MediumImpl implements MLevel {
