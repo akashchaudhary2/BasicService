@@ -10,8 +10,10 @@ import com.akash.JavaProject.service.mlevel.MLevel;
 import com.akash.JavaProject.service.mlevel.MediumImpl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Java {
     private int[] ints = {2, 7};
@@ -80,7 +82,7 @@ public class Java {
         System.out.println();
         List<Book> booksList = new ArrayList<>();
         Books books = new Books();
-        books.setBooksList(booksList);
+        books.setBooksList();
         Book book = new Book();
         book.setBooksInUpper(books.getBooksList());
         book.getBooksInUpper().forEach(x->System.out.print(x+" "));;
@@ -88,9 +90,6 @@ public class Java {
         book.getBookspriceGraeterThenX().forEach(x->System.out.print(x+" "));;
         book.setBooksInLower(books.getBooksList());
         book.getBooksInLower().stream().forEach(x->System.out.print(x+" "));
-
-
-
 
 
 
