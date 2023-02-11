@@ -53,7 +53,7 @@ public class Java {
         return str2;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Java java = new Java();
         ELevel ELeval = new ELevalImpl();
         MLevel medium = new MediumImpl();
@@ -97,6 +97,7 @@ public class Java {
         System.out.println();
         book.setAllBooks(books.getBooksList());
         book.getAllBooks().stream().forEach(System.out::print);
+        Thread.sleep(10000);
     }
 
 }
