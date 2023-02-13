@@ -3,7 +3,6 @@ package com.akash.JavaProject.service;
 import com.akash.JavaProject.service.elevel.ELevel;
 import com.akash.JavaProject.service.elevel.ELevalImpl;
 import com.akash.JavaProject.service.book.Book;
-import com.akash.JavaProject.service.book.Books;
 import com.akash.JavaProject.service.hlevel.HLevel;
 import com.akash.JavaProject.service.hlevel.HLImpl;
 import com.akash.JavaProject.service.mlevel.MLevel;
@@ -78,10 +77,6 @@ public class Java {
         hl.ExTreeMap();
         hl.ExHashtable();
         System.out.println();
-        List<Book> booksList = new ArrayList<>();
-        Books books = new Books();
-        books.setBooksList();
-        Book book = new Book();
     }
 
 }

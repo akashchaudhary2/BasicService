@@ -4,7 +4,9 @@ import org.junit.jupiter.api.Test;
 
 public interface BookTest {
     @Test
-    public void testExpensiveBook();
+    void testExpensiveBook();
     @Test
-    public void testCheapestBook();
+    void testCheapestBook();
+    void testFindAll();
+
 }
