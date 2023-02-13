@@ -74,9 +74,9 @@ public class BookServiceC implements BookService {
     }
 
     @Override
-    public void setBookspriceGreaterThenX(List<Book> books) {
+    public void setBookspriceGreaterThenX(List<Book> books, int x) {
         this.bookspriceGraeterThenX = books.stream()
-                .filter(b -> b.getPrice() > 200)
+                .filter(b -> b.getPrice() > x)
                 .collect(Collectors.toList());
     }
 

@@ -16,18 +16,19 @@ public interface BookService {
 
     void setBooksInLower(@NotNull List<Book> books);
 
-    //cheapest book
+    //cheapest
     Optional<Book> getCheapestBook();
 
     void setCheapestBook(@NotNull List<Book> books);
 
+    //expensive
     Optional<Book> getExpensiveBook();
 
     void setExpensiveBook(@NotNull List<Book> books);
 
     List<Book> getBookspriceGreaterThenX();
 
-    void setBookspriceGreaterThenX(List<Book> books);
+    void setBookspriceGreaterThenX(List<Book> books, int x);
 
 
     List<String> getAllBooks();
