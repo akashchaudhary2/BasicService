@@ -9,8 +9,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BookServieTest {
-    @Test
+public class Test1 implements BookTest {
+    @Override @Test
     public void testExpensiveBook() {
         BookService bookService = new BookServiceC();
         List<Book> booksList = Arrays.asList(new Book(1, "Book1", 100.0)
@@ -26,7 +26,7 @@ public class BookServieTest {
 
     }
 
-    @Test
+    @Override @Test
     public void testCheapestBook() {
         BookService bookService = new BookServiceC();
         List<Book> booksList = Arrays.asList(new Book(1, "Book1", 100.0)
