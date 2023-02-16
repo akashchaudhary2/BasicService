@@ -66,7 +66,8 @@ public class Test1 implements BookTest {
                 , new Book(3, "Book3", 300.0)
                 , new Book(4, "Book4", 400.0));
         Mockito.when(bookRepo.findAll()).thenReturn(booksList);
-        assertEquals(bookRepo.findAll(),booksList);
+        assertEquals(5,booksList.stream()
+                .count());
 
     }
 

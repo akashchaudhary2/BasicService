@@ -7,6 +7,7 @@ public interface BookTest {
     void testExpensiveBook();
     @Test
     void testCheapestBook();
+    @Test
     void testFindAll();
 
 }
