@@ -1,20 +1,26 @@
 package com.akash.basicService;
 
 import com.akash.basicService.enums.Prime;
+import com.akash.basicService.interfaces.StringsTest;
+import com.akash.basicService.interfaces.numbersTests;
 import com.akash.basicService.service.Basic;
+import com.akash.basicService.service.Strings;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class BasicServiceApplicationTests implements Class1Tests {
+class BasicServiceApplicationTests implements numbersTests, StringsTest {
     @Autowired
     Basic basic;
+    @Autowired
+    Strings strings;
 
     @Test
     @Override
@@ -45,5 +51,17 @@ class BasicServiceApplicationTests implements Class1Tests {
     public void oddUptoX() {
         List list = Arrays.asList(1, 3, 5, 7, 9);
         assertEquals(basic.oddUptoX(10), list);
+    }
+
+    @Test
+    @Override
+    public void stringTest() {
+        assertEquals(strings.lengthOfLastWord(" Hello world  "),5);
+    }
+    @Test
+    @Override
+    public void bookOwnedTest(){
+        List list = Arrays.asList("1","2","3","100000");
+        assertEquals(strings.bookOwned("1 2 3 100000"),list);
     }
 }

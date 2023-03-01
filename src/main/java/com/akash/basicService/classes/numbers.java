@@ -1,4 +1,4 @@
-package com.akash.basicService;
+package com.akash.basicService.classes;
 
 
 import com.akash.basicService.enums.Flag;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class Class1 implements Basic {
+public class numbers implements Basic {
     @Override
     public Prime primeCheck(Integer number) {
         String flag = "Green";

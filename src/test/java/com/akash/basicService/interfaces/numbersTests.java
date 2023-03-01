@@ -1,8 +1,8 @@
-package com.akash.basicService;
+package com.akash.basicService.interfaces;
 
 import org.junit.jupiter.api.Test;
 
-public interface Class1Tests {
+public interface numbersTests {
     @Test
     void primeTest();
 
@@ -14,4 +14,5 @@ public interface Class1Tests {
 
     @Test
     void oddUptoX();
+
 }
